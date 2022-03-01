@@ -1,6 +1,6 @@
-## Welcome to xamr0n Pages
+## Welcome to xamron Pages
 
-You can use the [editor on GitHub](https://github.com/xamronpc/xamronpc.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I'm just a newbie in coding.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
