@@ -1,0 +1,176 @@
+html {
+  font-size: 14px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: 'Crimson Pro', serif;
+/* this should be the rest of the output you got from Google fonts */
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 36px;
+  text-align: center;
+  color: #444;
+  line-height: 1;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 {
+   font-size: 24px;
+   text-align: start;
+   color: #444;
+   line-height: 1;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+h3 {
+   font-size: 20px;
+   text-align: center;
+   color: #444;
+   line-height: 1;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+h4 {
+   font-size: 16px;
+   text-align: left;
+   color: #444;
+   line-height: 1;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+p, li {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1;
+  color: #444;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+html {
+  background-color: #303030;
+}
+
+body {
+  width: 1000px;
+  margin: 10px auto 0;
+  background-color: #ffffff;
+  padding: 0 20px 20px 20px;
+  border: 2px solid #444;
+}
+
+img {
+  display: block;
+  margin: 10px auto 0;
+  border: 5px solid #444;
+}
+
+button {
+  background-color: #333;
+  color: #ddd;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.collapsible {
+  display: block;
+  margin: 5px auto 0;
+  background-color: #333;
+  color: #ddd;
+  cursor: pointer;
+  padding: 5px;
+  width: 30%;
+  border-radius: 5px;
+  border: 2px solid #757155;
+  text-align: left
+  outline: none;
+  font-size: 14px;
+}
+
+.active, .collapsible:hover {
+  color: #ffffff;
+  border: 2px solid #000000;
+  background-color: #757155;
+}
+
+.content {
+  padding: 0 16px;
+  display: none;
+  margin: 10px auto 0;
+  width: 88%;
+  overflow: hidden;
+  border: 2px solid #757155;
+  background-color: #ffffff;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;  
+  display: block;
+  font-size: 16px;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #ddd;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #ddd;
+  background-color: #757155;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
