@@ -1,0 +1,213 @@
+html {
+  font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: 'Crimson Pro', serif;
+/* this should be the rest of the output you got from Google fonts */
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 36px;
+  text-align: center;
+  color: #444;
+  line-height: 1;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 {
+   font-size: 24px;
+   text-align: start;
+   color: #444;
+   line-height: 1;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+h3 {
+   font-size: 20px;
+   text-align: center;
+   color: #444;
+   line-height: 1;
+   letter-spacing: 5px;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+h4 {
+   font-size: 16px;
+   text-align: start;
+   line-height: 1;
+   text-shadow: 4px 4px 4px rgb(8, 8, 8);
+}
+
+p, li {
+  text-align: start;
+  font-size: 16px;
+  line-height: 1;
+  color: #444;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+html {
+  background-color: #303030;
+}
+
+body {
+  inline-size: 1000px;
+  margin: 10px auto 0;
+  background-color: #ffffff;
+  padding: 0 20px 20px 20px;
+  border: 2px solid #444;
+}
+
+img {
+  display: block;
+  margin: 10px auto 0;
+  border: 2px solid #444;
+}
+
+button {
+  background-color: #333;
+  color: #ddd;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.collapsible {
+  display: block;
+  margin: 5px auto 0;
+  background-color: #333;
+  color: #ddd;
+  cursor: pointer;
+  padding: 5px;
+  inline-size: 30%;
+  border-radius: 5px;
+  border: 2px solid #757155;
+  text-align: start;
+  outline: none;
+  font-size: 14px;
+}
+
+.active, .collapsible:hover {
+  color: #ffffff;
+  border: 2px solid #000000;
+  background-color: #757155;
+}
+
+.content {
+  padding: 0 16px;
+  display: center;
+  margin: 10px auto 0;
+  inline-size: 88%;
+  overflow: hidden;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.fa-linkedin {
+  background: transparent;
+  color: #eee;
+}
+
+.fa-github {
+  background: transparent;
+  color: #eee;
+}
+
+.fa-envelope {
+  background: #505050;
+  color: #eee;
+}
+
+.footer {
+  text-shadow: 4px 4px 4px #aaa;
+  background: #505050;
+  padding: 10px;
+}
+
+a {
+  color: #333;
+  text-shadow: 4px 4px 4px #111;
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #eee;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  inset-inline-start: 0;
+}
+
+#home {
+  inset-block-start: 0px;
+  background-color: #555;
+  color: #eee;
+  text-shadow: 4px 4px 4px #111;
+}
+
+#blog {
+  inset-block-start: 120px;
+  background-color: #555;
+  color: #eee;
+  text-shadow: 4px 4px 4px #111;
+}
+
+#about {
+  inset-block-start: 60px;
+  background-color: #555;
+  color: #eee;
+  text-shadow: 4px 4px 4px #111;
+}
+
+#experience {
+  inset-block-start: 180px;
+  background-color: #555;
+  color: #eee;
+  text-shadow: 4px 4px 4px #111;
+}
+
+#contact {
+  inset-block-start: 240px;
+  background-color: #555;
+  color: #eee;
+  text-shadow: 4px 4px 4px #111;
+}
+
+
+* {box-sizing: border-box}
+
+/* Style tab links */
+.tablink {
+  background-color: #222;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #555;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Outlook {background-color: #efefef;}
+#Word {background-color: #efefef;}
+#Excel {background-color: #efefef;}
+#Powerpoint {background-color: #efefef;}
