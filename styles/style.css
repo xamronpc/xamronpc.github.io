@@ -1,16 +1,20 @@
 html {
-  font-size: 16px; /* px means "pixels": the base font size is now 10 pixels high  */
-  font-family: 'Crimson Pro', serif;
-/* this should be the rest of the output you got from Google fonts */
+  font-size: 16px;
+  font-family: 'Candara', serif;
+  background-color: #303030;
+}
+
+* {
+  box-sizing:border-box;
 }
 
 h1 {
-  margin: 0;
+  margin: 1;
   padding: 10px 0;
   font-size: 36px;
   text-align: center;
   color: #444;
-  line-height: 1;
+  line-height: .5;
   text-shadow: 4px 4px 4px #aaa;
 }
 
@@ -18,13 +22,13 @@ h2 {
    font-size: 24px;
    text-align: start;
    color: #444;
-   line-height: 1;
+   line-height: .5;
    text-shadow: 4px 4px 4px #aaa;
 }
 
 h3 {
    font-size: 20px;
-   text-align: center;
+   text-align: start;
    color: #444;
    line-height: 1;
    letter-spacing: 5px;
@@ -34,8 +38,10 @@ h3 {
 h4 {
    font-size: 16px;
    text-align: start;
-   line-height: 1;
-   text-shadow: 4px 4px 4px rgb(8, 8, 8);
+   color: #444;
+   line-height: .5;
+   margin: 15px auto 5px;
+   text-shadow: 4px 4px 4px #aaa;
 }
 
 p, li {
@@ -43,171 +49,241 @@ p, li {
   font-size: 16px;
   line-height: 1;
   color: #444;
+  margin: 10px auto;
   letter-spacing: 1px;
-  text-shadow: 4px 4px 4px #aaa;
-}
-
-html {
-  background-color: #303030;
 }
 
 body {
   inline-size: 1000px;
-  margin: 10px auto 0;
+  margin: 1px auto 0;
   background-color: #ffffff;
   padding: 0 20px 20px 20px;
   border: 2px solid #444;
 }
 
-img {
-  display: block;
-  margin: 10px auto 0;
-  border: 2px solid #444;
-}
-
-button {
-  background-color: #333;
-  color: #ddd;
-  border-radius: 5px;
-  border: 1px solid black;
-}
-
-.collapsible {
-  display: block;
-  margin: 5px auto 0;
-  background-color: #333;
-  color: #ddd;
-  cursor: pointer;
-  padding: 5px;
-  inline-size: 30%;
-  border-radius: 5px;
-  border: 2px solid #757155;
-  text-align: start;
-  outline: none;
-  font-size: 14px;
-}
-
-.active, .collapsible:hover {
-  color: #ffffff;
-  border: 2px solid #000000;
-  background-color: #757155;
-}
-
-.content {
-  padding: 0 16px;
-  display: center;
-  margin: 10px auto 0;
-  inline-size: 88%;
-  overflow: hidden;
-  border: 2px solid white;
-  background-color: transparent;
-}
-
 .fa-linkedin {
-  background: transparent;
-  color: #eee;
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
 }
 
 .fa-github {
-  background: transparent;
-  color: #eee;
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
+}
+
+.fa-facebook {
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
+}
+
+.fa-codepen {
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
 }
 
 .fa-envelope {
-  background: #505050;
-  color: #eee;
-}
-
-.footer {
-  text-shadow: 4px 4px 4px #aaa;
-  background: #505050;
-  padding: 10px;
+ background: transparent;
+ color: #eee;
+ text-shadow: 4px 4px 4px #111;
 }
 
 a {
-  color: #333;
-  text-shadow: 4px 4px 4px #111;
-}
-#mySidenav a {
-  position: absolute;
-  left: -80px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #eee;
-  border-radius: 0 5px 5px 0;
+ color: #eee;
+ float: none;
+ background: transparent;
+ text-shadow: 1px 1px 1px #111;
 }
 
-#mySidenav a:hover {
-  inset-inline-start: 0;
+.container {
+  padding: 20px;
 }
 
-#home {
-  inset-block-start: 0px;
-  background-color: #555;
-  color: #eee;
-  text-shadow: 4px 4px 4px #111;
+.row:after {
+  content: "";
+  display: table;
+  clear: both
 }
 
-#blog {
-  inset-block-start: 120px;
-  background-color: #555;
-  color: #eee;
-  text-shadow: 4px 4px 4px #111;
-}
-
-#about {
-  inset-block-start: 60px;
-  background-color: #555;
-  color: #eee;
-  text-shadow: 4px 4px 4px #111;
-}
-
-#experience {
-  inset-block-start: 180px;
-  background-color: #555;
-  color: #eee;
-  text-shadow: 4px 4px 4px #111;
-}
-
-#contact {
-  inset-block-start: 240px;
-  background-color: #555;
-  color: #eee;
-  text-shadow: 4px 4px 4px #111;
-}
-
-
-* {box-sizing: border-box}
-
-/* Style tab links */
-.tablink {
-  background-color: #222;
-  color: white;
+.column-66 {
   float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  width: 66.666666%;
+  padding: 10px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.333333%;
+  padding: 10px;
+}
+
+.column {
+  float: left;
   width: 25%;
+  padding: 0;
 }
 
-.tablink:hover {
-  background-color: #555;
+.button {
+ font-family: "Candara";
+ text-shadow: 4px 4px 4px #111;
+ background: #505050;
+ border: 1px solid brown;
+ border-radius: 1px;
+ color: #eee;
+ width: 100%;
+ padding: 8px 10px;
+ font-size: 16px;
+ cursor: pointer;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  border: 3px solid #505050;
 }
 
-#Outlook {background-color: #efefef;}
-#Word {background-color: #efefef;}
-#Excel {background-color: #efefef;}
-#Powerpoint {background-color: #efefef;}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+.header {
+ text-align: center;
+ margin: 5px auto;
+ padding: 10px;
+ overflow: hidden;
+ background-color: #505050;
+}
+
+.header a {
+ text-align: center;
+ display: absolute;
+ padding: 10px;
+ text-decoration: none;
+}
+
+.footer {
+ text-align: center;
+ margin: 5px auto;
+ padding: 10px;
+ overflow: hidden;
+ background-color: #505050;
+}
+
+.footer a {
+ text-align: center;
+ display: absolute;
+ padding: 10px auto;
+ text-decoration: none;
+}
+
+.skills {
+ text-align: right;
+ padding-top: 5px;
+ padding-bottom: 5px;
+ color: white;
+}
+
+.outlook {
+ width: 87%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.word {
+ width: 82%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.excel {
+ width: 88%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.powerpoint {
+ width: 85%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.powerbi {
+ width: 75%;
+ text-shadow: 4px 4px 4px #000;
+ background-color: #333;
+}
+
+.collapsible {
+ font-family: "Candara";
+ text-shadow: 4px 4px 4px #111;
+ background-color: #555;
+ color: white;
+ cursor: pointer;
+ padding: 10px;
+ width: 100%;
+ border: 2px solid white;
+ text-align: left;
+ outline: none;
+ font-size: 16px;
+}
+
+.active, .collapsible:hover {
+ background-color: #333;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+ content: '\002B';
+ color: white;
+ float: right;
+ margin-left: 5px;
+}
+
+.active:after {
+ content: "\2212";
+}
+
+.skillbar {
+ overflow: hidden;
+ color: #333;
+ letter-spacing: 1px;
+ display: block;
+ padding: 1px 1px;
+ background-color: #eee;
+ border: 2px solid darkgreen;
+ box-shadow: 1px 1px 3px 1px #808080;
+}
