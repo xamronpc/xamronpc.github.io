@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Editable CV/Resume</title>
+   		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Candara">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+</head>
+<style>
+
+html {
+  font-size: 12px;
+  font-family: 'Candara', serif;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+h1 {
+  margin: .5;
+  padding: 1px 0;
+  font-size: 28px;
+  text-align: start;
+  color: #444;
+  line-height: .5;
+}
+
+h2 {
+   font-size: 16px;
+   text-align: start;
+   color: #444;
+   line-height: .5;
+}
+
+h3 {
+   font-size: 14px;
+   text-align: center;
+   color: #444;
+   line-height: .1;
+   letter-spacing: 5px;
+}
+
+h4 {
+   font-size: 12px;
+   text-align: start;
+   color: #444;
+   line-height: 1;
+   margin: 15px auto 5px;
+}
+
+p {
+  text-align: justify;
+  font-size: 11.5px;
+  line-height: 1;
+  color: #444;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+}
+
+ul, li {
+  text-align: start;
+  font-size: 11px;
+  color: #444;
+  word-wrap: break-word;
+  margin-left: 10px;
+  padding: 1px;
+}
+
+body {
+  max-inline-size: 700px;
+  margin: 2px auto;
+  background-color: #fff;
+}
+
+a {
+ color: #eee;
+ float: none;
+ background: transparent;
+ text-shadow: 1px 1px 1px #111;
+}
+
+.container {
+  margin: 0px;
+  padding: 1px;
+  box-shadow: 0 0 1px 1px rgba(100, 100, 100, 0.9);
+  background-image: linear-gradient(to right, rgba(100, 0, 0, .3), rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.666666%;
+  margin-top: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 1px 1px rgba(100, 100, 100, 0.1);
+}
+
+.column-33 {
+  float: left;
+  width: 33.333333%;
+  margin: 0px auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 1px 0 rgba(100, 100, 100, 0.1);
+  background: transparent;
+}
+
+img {
+  display: absolute;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+<style type="text/javascript">
+@media print {
+	container {
+		height: 297mm;
+		width: 210mm;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media print {
+  button {
+    display: none;
+  }
+}
+</style>
+<body>
+<div class="container">
+        <div class="row">
+            <div class="column-33">
+                <img id="img" src="https://kabayanika.com/wp-content/uploads/2023/01/CC.jpg" width="335" height="471"><br />
+                <hr>
+                    <h2 contenteditable="true">Contacts</h2>
+                        <p contenteditable="true"><i class="fa fa-phone"></i> +97150 120 8643</p>
+                        <p contenteditable="true"><i class="fa fa-envelope"></i> example@email.com</p>
+                        <p contenteditable="true"><i class="fa fa-globe"></i> Abu Dhabi, U.A.E.</p>                    
+                    <hr>
+                    <h2 contenteditable="true">Education</h2>
+                    <ul contenteditable="true">
+                        <li><strong>Degree</strong> <br />School / Institution, Country<br />Year Completed (2008) </li>
+                        <li><strong>Degree</strong> <br />School / Institution, Country<br />Year Completed (2004) </li>
+                    </ul>                    
+                    <hr>
+                    <h2 contenteditable="true">Abilities</h2>
+                    <ul contenteditable="true">
+                        <li>Ability to manage electronic and physical documents using various document management systems</li>
+                        <li>Strong attention to detail</li>
+                        <li>Excellent communication skills to communicate with project managers, contractors, and stakeholders</li>
+                        <li>Proficient in organizing, categorizing, and maintaining documents</li>
+                        <li>Knowledge of computer programs such as Microsoft Office, Adobe Acrobat, and AutoCAD</li>
+                        <li>Ability to prioritize tasks, manage deadlines, and meet targets</li>
+                        <li>Familiarity with quality control procedures to ensure accuracy, completeness, and consistency of documents</li>
+                        <li>Understanding of relevant industry standards and regulations, such as ISO and OHSAS</li>
+                        <li>Ability to identify issues and resolve them quickly and efficiently</li>
+                        <li>Collaboration skills to work effectively with other team members to achieve project objectives</li>
+                    </ul>
+            </div>
+            <div class="column-66">
+                <h1 contenteditable="true"><span>Coney Grace Carter</span></h1>
+                    <h2 contenteditable="true">Sexytary cum Document Controller</h2>
+                    <h2 contenteditable="true">7 Years Work Experience</h2>
+                    <hr>
+                    <h2 contenteditable="true">Profile Summary</h2>
+                        <p contenteditable="true">As a document controller, I possess a diverse set of skills to ensure that documents are managed efficiently within an organization. My experience working with document management systems such as SharePoint, Documentum, and Aconex have provided me with the expertise needed to handle electronic and physical documents with ease. I am meticulous when it comes to maintaining accurate records, and my strong attention to detail allows me to ensure that all documents are properly filed, tracked, and updated.</p>
+                        <p contenteditable="true">In addition to my technical skills, I have excellent communication skills that allow me to effectively communicate with project managers, contractors, and stakeholders regarding document requirements, approvals, and timelines. I am proficient in organizing and categorizing documents, ensuring they are easily accessible and properly archived, and my technical expertise with software such as Microsoft Office, Adobe Acrobat, and AutoCAD allows me to troubleshoot and solve basic technical issues.</p>
+                    <hr>
+                    <h2 contenteditable="true"><strong>Work Experience</strong></h2>
+                    <h4 contenteditable="true"><strong>China State Construction Engineering Corp.</strong></h4>
+                        <p contenteditable="true"><strong>Document Controller</strong> (Feb-2020 - Present)</p>
+                        <p contenteditable="true"><strong>Responsibilities</strong></p>
+                    <ul contenteditable="true">
+                        <li>Responsible for the timely, accurate, efficient preparation and management of documents.</li>
+                        <li>Control &amp; maintain the system for issuance recording / filing, tracking, retrieval of documents like procedures, plans, QA/QC
+                                records, specifications, drawings and related documents.</li>
+                        <li>Control the numbering, sorting, filing, storing, and retrieval of both electronic and hard copy documents produced by technical
+                                teams, projects, or departments.</li>
+                    </ul>
+                    <br>
+                    <h4 contenteditable="true"><strong>Ghantoot Engineering</strong></h4>
+                        <p contenteditable="true"><strong>Site Secretary / Document Controller</strong> (Feb-2018 - Feb-2020)</p>
+                        <p contenteditable="true"><strong>Responsibilities</strong></p>
+                    <ul contenteditable="true">
+                        <li>Ensure that all controlled documents related to the Project are maintained to the latest issue, and that these documents are made
+                                available at all locations where operations essential to the effective functioning of the Quality Management System are performed.</li>
+                        <li>Update and maintenance of the project document control database by monitoring all incoming/outgoing project documentation.</li>
+                        <li>Compilation of all files and submission to client for review and approval.</li>
+                        <li>Performs other duties commensurate with functional level and responsibilities.</li>
+                    </ul>
+                    <br>
+                        <h4 contenteditable="true"><strong>Trans Emirates</strong></h4>
+                        <p contenteditable="true"><strong>Site Secretary</strong> (Feb-2012 - Feb-2018)</p>
+                        <p contenteditable="true"><strong>Responsibilities</strong></p>
+                    <ul contenteditable="true">
+                        <li>Familiarity with all phases of Project including Pre-Construction, Construction and Closeout.</li>
+                        <li>Add value to engineering project deliverables, proposal packages, and marketing collateral via advanced level word processing,
+                            technical editing, and maintaining quality assurance.</li>
+                        <li>Using an electronic document management system (EDMS) to index, store and retrieve a wide variety of document types (for example,
+                            security, training records or engineering drawings) such as SharePoint, Aconex, Primavera Projects Unifier, etc.</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+<br />
+	<button onclick="printPage()">Print</button>
+    
+	<script type="text/javascript">
+		function printPage() {
+			window.print();
+		}
+        
+    const Image = document.getElementById("img");
+
+  Image.addEventListener("dragover", function(event) {
+    event.preventDefault();
+  });
+
+  Image.addEventListener("drop", function(event) {
+    event.preventDefault();
+    let image = event.dataTransfer.files[0];
+
+    // Ensure that the dropped item is an image
+    if (image.type.match(/image.*/)) {
+      let reader = new FileReader();
+      reader.onload = function(e) {
+        Image.src = e.target.result;
+      };
+      reader.readAsDataURL(image);
+    };
+  });
+  </script>  
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+	</body>
+</html>
