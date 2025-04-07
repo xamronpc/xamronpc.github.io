@@ -17,7 +17,7 @@ body {
 header {
     background-color: #1f2937;
     color: #fff;
-    padding: 20px 0;
+    padding: 30px 20px;
     text-align: center;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -29,13 +29,14 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 /* Main container */
 main {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Sections */
@@ -66,7 +67,7 @@ p, li {
     margin-bottom: 10px;
 }
 
-/* Work Experience Collapsibles */
+/* Collapsible Sections */
 .collapsible {
     background-color: #e2e8f0;
     color: #333;
@@ -75,7 +76,6 @@ p, li {
     width: 100%;
     border: none;
     text-align: left;
-    outline: none;
     font-size: 1.1rem;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -87,9 +87,8 @@ p, li {
 }
 
 .content {
-    padding: 0 15px;
+    padding: 10px 15px;
     display: none;
-    overflow: hidden;
     background-color: #f1f5f9;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -103,7 +102,7 @@ footer {
     color: #777;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -115,5 +114,49 @@ footer {
 
     h2 {
         font-size: 1.3rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .collapsible {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .content {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, li {
+        font-size: 0.95rem;
     }
 }
