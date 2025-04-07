@@ -1,241 +1,119 @@
-html {
-  font-size: 100%;
-  font-family: 'Candara', serif;
-  background-color: #eeeeee;
-}
-
+/* Reset and base styles */
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 0 20px 20px;
-  border: 2px solid #444;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-h1 {
-  margin: 1rem 0;
-  padding: 10px 0;
-  font-size: 2.25rem;
-  text-align: center;
-  color: #444;
-  line-height: 1.2;
-  text-shadow: 4px 4px 4px #aaa;
+/* Header */
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Main container */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Sections */
+section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
 
 h2 {
-  font-size: 1.5rem;
-  text-align: start;
-  color: #444;
-  line-height: 1.2;
-  text-shadow: 4px 4px 4px #aaa;
+    color: #1f2937;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
 }
 
-h3 {
-  font-size: 1.25rem;
-  text-align: start;
-  color: #444;
-  line-height: 1.4;
-  letter-spacing: 5px;
-  text-shadow: 4px 4px 4px #aaa;
-}
-
-h4 {
-  font-size: 1rem;
-  text-align: start;
-  color: #444;
-  line-height: 1.2;
-  margin: 15px auto 5px;
-  text-shadow: 4px 4px 4px #aaa;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 p, li {
-  text-align: start;
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #444;
-  margin: 10px auto;
-  letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-a {
-  color: #eee;
-  background: transparent;
-  text-shadow: 1px 1px 1px #111;
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  margin: 0 auto;
-  border: 3px solid #505050;
-}
-
-.container {
-  padding: 20px;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column-66, .column-33, .column {
-  float: left;
-  padding: 10px;
-}
-
-.column-66 {
-  width: 66.6666%;
-}
-
-.column-33 {
-  width: 33.3333%;
-}
-
-.column {
-  width: 25%;
-  padding: 0;
-}
-
-.button {
-  font-family: "Candara";
-  text-shadow: 4px 4px 4px #111;
-  background: #505050;
-  border: 1px solid brown;
-  border-radius: 2px;
-  color: #eee;
-  width: 100%;
-  padding: 8px 10px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.card {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  padding: 10px;
-  text-align: center;
-  background-color: transparent;
-}
-
-.header, .footer {
-  text-align: center;
-  margin: 5px auto;
-  padding: 10px;
-  background-color: #505050;
-}
-
-.header a, .footer a {
-  display: inline-block;
-  padding: 10px;
-}
-
-.skills {
-  text-align: right;
-  padding: 5px 0;
-  color: white;
-}
-
-.skillbar {
-  overflow: hidden;
-  color: #333;
-  letter-spacing: 1px;
-  background-color: #eee;
-  border: 2px solid darkgreen;
-  box-shadow: 1px 1px 3px 1px #808080;
-  margin-bottom: 10px;
-}
-
-.outlook, .word, .excel, .powerpoint, .powerbi {
-  text-shadow: 4px 4px 4px #000;
-  background-color: #333;
-  height: 100%;
-}
-
-.outlook { width: 87%; }
-.word { width: 82%; }
-.excel { width: 88%; }
-.powerpoint { width: 85%; }
-.powerbi { width: 75%; }
-
+/* Work Experience Collapsibles */
 .collapsible {
-  font-family: "Candara";
-  text-shadow: 4px 4px 4px #111;
-  background-color: #555;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: 2px solid white;
-  text-align: left;
-  font-size: 1rem;
-  outline: none;
+    background-color: #e2e8f0;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
 }
 
-.collapsible::after {
-  content: '\002B';
-  color: white;
-  float: right;
-  margin-left: 5px;
-}
-
-.active::after {
-  content: "\2212";
-}
-
-.active, .collapsible:hover {
-  background-color: #333;
+.collapsible:hover {
+    background-color: #cbd5e1;
 }
 
 .content {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f5f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 1000px) {
-  .column-66, .column-33 {
-    width: 100%;
+/* Footer */
+footer {
     text-align: center;
-  }
+    margin-top: 40px;
+    padding: 20px;
+    color: #777;
 }
 
-@media screen and (max-width: 768px) {
-  .column {
-    width: 50%;
-  }
-}
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
 
-@media screen and (max-width: 600px) {
-  .column, .column-66, .column-33 {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+    header p {
+        font-size: 1rem;
+    }
 
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  .button {
-    font-size: 0.9rem;
-    padding: 6px 8px;
-  }
+    h2 {
+        font-size: 1.3rem;
+    }
 }
